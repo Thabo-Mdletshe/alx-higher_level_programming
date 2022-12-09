@@ -1,4 +1,4 @@
-f __name__ == "__main__":
+if __name__ == "__main__":
 
     """Handle basic arithmetic operations."""
 
