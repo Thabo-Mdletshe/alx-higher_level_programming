@@ -9,7 +9,7 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    @property
+i   @property
     def width(self):
         return self.__width
 
@@ -54,3 +54,18 @@ class Rectangle(Base):
         if type(value) != int:
             raise TypeError("y must be an integer")
         if value < 0:
+
+class Rectangle:
+    # existing code
+    def area(self):
+        return self.__width * self.__height
+
+class Rectangle:
+    # existing code
+    def display(self):
+        for i in range(self.__height):
+            print("#" * self.__width)
+class Rectangle:
+    # existing code
+    def __str__(self):
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
